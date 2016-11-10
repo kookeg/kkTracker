@@ -1,6 +1,6 @@
 //初始化一些基本参数
 if (typeof kk_click_head_flag == "undefined") {
-  var cookieDomain = "smartlei.com";
+  var cookieDomain = "kookeg.com";
   var _kk_click_hash_key = "kk_click_20161109";
   var Md5Util = {
     hexcase : 0,
@@ -345,11 +345,11 @@ if (typeof kk_click_page_tracker == "undefined") {
     var separator = encodeURIComponent(",");
 
     // cookie 域
-    var cookieDomain = (typeof cookieDomain == 'undefined') ? "smartlei.com"
+    var cookieDomain = (typeof cookieDomain == 'undefined') ? "kookeg.com"
       : cookieDomain;
 
     // 统计请求的url数组
-    var urlArray = [ "http://tracker.smartlei.com/", "https://tracker.smartlei.com/" ];
+    var urlArray = [ "http://tracker.kookeg.com/", "https://tracker.kookeg.com/" ];
 
     var http_protocol = "http:";
     // document.location.protocol在某些极端情况下(IE6,代理)不能访问
@@ -524,7 +524,7 @@ if (typeof kk_click_page_tracker == "undefined") {
               is_first_pv = 1;
             } else {
               // 修改访次计算规则,30分钟内不是第一次访问
-              var refer_is_kk_reg = /^http?:\/\/[\w\.]*?smartlei/;
+              var refer_is_kk_reg = /^http?:\/\/[\w\.]*?kookeg/;
               var __new_out_refer = '';
               //检测是否外部流量
               if (!refer_is_kk_reg.test(__kk_referrer)) {
@@ -575,7 +575,7 @@ if (typeof kk_click_page_tracker == "undefined") {
                   expires_time_1day, "/", cookieDomain);
             }
           } else {
-            var refer_is_kk_reg = /^http?:\/\/[\w\.]*?smartlei/;
+            var refer_is_kk_reg = /^http?:\/\/[\w\.]*?kookeg/;
             if (!refer_is_kk_reg.test(__kk_referrer)) {
               __kk_Campaign_obj = new __kk_Campaign();
               _kk_out_refer = __kk_Campaign_obj
